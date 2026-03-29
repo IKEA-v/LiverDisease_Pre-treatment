@@ -1,6 +1,6 @@
-# LiverDisease_Pre-treatment
-用于记录肝病早期筛查大创的过程
-
-##process_medical_data.py
-前期体检数据的清洗，去掉了重复数据，不合理年龄值，通过3&\delta$原则去掉不合理的体检数据项
-依赖配置：pandas与openpxy库
+## process_medical_data.py
+- 功能：体检原始数据清洗与预处理
+- 操作：去重、异常值过滤（$3\delta$ 原则）、缺失值处理
+- 依赖：`pandas`、`openpyxl`
+- 输入：原始体检Excel文件
+- 输出：清洗后可直接用于建模的数据集
